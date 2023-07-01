@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dinosaurios.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dino.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="Ejercicio 3" TextColor="Green" FontAttributes="Italic" FontSize="Subtitle" HorizontalOptions="Center"/>
+            <Entry x:Name="Nom" Placeholder="Ingrese el nombre del dinosaurio" TextColor="BlueViolet" TextTransform="None"/>
+            <Entry x:Name="K"  Placeholder="kilogramos" TextColor="BlueViolet" TextTransform="None"/>
+            <Entry x:Name="Mt" Placeholder="Metros" TextColor="BlueViolet" TextTransform="None"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Ver resultado"
+                BackgroundColor="LightPink"
+                TextColor="Black"    
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" />
+            <Entry x:Name="Libras" Placeholder="las libras son" TextColor="BlueViolet" TextTransform="None" IsEnabled="False"/>
+            <Entry x:Name="Centimetros" Placeholder="Los centimetros son" TextColor="BlueViolet" TextTransform="None" IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
